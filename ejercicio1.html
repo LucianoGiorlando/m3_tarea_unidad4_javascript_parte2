@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body id="body">
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+
+
+
+<script>
+    const body = document.getElementById('body');
+    const box1 = document.getElementById('box1');
+    const box2 = document.getElementById('box2');
+    const box3 = document.getElementById('box3');
+
+    box1.addEventListener('click', function() {
+        const bgColor = window.getComputedStyle(box1).backgroundColor;
+        body.style.backgroundColor = bgColor;
+    });
+
+    box2.addEventListener('click', function() {
+        const bgColor = window.getComputedStyle(box2).backgroundColor;
+        body.style.backgroundColor = bgColor;
+    });
+
+    box3.addEventListener('click', function() {
+        const bgColor = window.getComputedStyle(box3).backgroundColor;
+        body.style.backgroundColor = bgColor;
+    });
+</script>
+
+</body>
+</html>
